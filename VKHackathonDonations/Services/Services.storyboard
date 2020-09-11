@@ -26,6 +26,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlV-To-BVd">
+                                <rect key="frame" x="63.5" y="445" width="287" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Пожертвования"/>
+                                <connections>
+                                    <segue destination="osc-aa-aq7" kind="presentation" modalPresentationStyle="fullScreen" id="K9n-AI-rid"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -33,6 +41,8 @@
                             <constraint firstItem="v8A-9G-KPn" firstAttribute="centerX" secondItem="u9i-1K-Mxz" secondAttribute="centerX" id="9NI-Ea-4Sg"/>
                             <constraint firstAttribute="centerY" secondItem="u9i-1K-Mxz" secondAttribute="centerY" id="HUZ-KG-sT1"/>
                             <constraint firstItem="v8A-9G-KPn" firstAttribute="top" secondItem="u9i-1K-Mxz" secondAttribute="bottom" constant="8" symbolic="YES" id="Hh1-pw-s0n"/>
+                            <constraint firstItem="BlV-To-BVd" firstAttribute="centerY" secondItem="jh9-8L-iW8" secondAttribute="centerY" id="dW6-gF-VmM"/>
+                            <constraint firstItem="BlV-To-BVd" firstAttribute="centerX" secondItem="jh9-8L-iW8" secondAttribute="centerX" id="rtc-G6-Fce"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jh9-8L-iW8"/>
                     </view>
@@ -41,6 +51,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2DK-kF-XYw" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1659.4202898550725" y="359.59821428571428"/>
+        </scene>
+        <!--DonationViewController-->
+        <scene sceneID="IT8-mc-cnK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DonationViewController" id="osc-aa-aq7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YzP-3D-yYr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2323" y="360"/>
         </scene>
         <!--Сервисы-->
         <scene sceneID="qSD-ML-dOx">
