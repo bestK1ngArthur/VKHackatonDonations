@@ -14,7 +14,8 @@ class FeedViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        tableView.tableFooterView = .init()
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int { 1 }
