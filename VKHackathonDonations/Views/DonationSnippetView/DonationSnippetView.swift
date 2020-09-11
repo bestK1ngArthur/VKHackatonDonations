@@ -17,6 +17,17 @@ class DonationSnippetView: UIView {
     @IBOutlet weak var helpButton: UIButton!
     @IBOutlet weak var footerView: UIView!
     
+    private let priceFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        
+        formatter.maximumFractionDigits = 0
+        formatter.numberStyle = .currency
+        formatter.currencySymbol = ""
+        formatter.currencyGroupingSeparator = " "
+        
+        return formatter
+    }()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -44,8 +55,27 @@ class DonationSnippetView: UIView {
     func configure(_ donation: Donation) {
         photoView.image = donation.photo
         titleLabel.text = donation.name
-        subtitleLabel.text = "\(donation.author.fullName) · FUCK"
-        infoLabel.text = "Памагите"
+        
+        var dateText: String {
+            switch donation.type {
+            case .oneTime(let date):
+                return "Закончится через n дней"
+            case .regular:
+                return "Помощь нужна каждый месяц"
+            }
+        }
+        subtitleLabel.text = "\(donation.author.fullName) · \(dateText)"
+        
+        var infoText: String {
+            switch donation.type {
+            case .oneTime:
+                return "Собрано \(priceFormatter.string(from: NSNumber(value: donation.currentAmount))!) ₽ из \(priceFormatter.string(from: NSNumber(value: donation.neededAmount))!) ₽"
+            case .regular:
+                return "Собрано в month \(priceFormatter.string(from: NSNumber(value: donation.currentAmount))!) ₽"
+            }
+        }
+        
+        infoLabel.text = infoText
         progressView.progress = Float(donation.currentAmount) / Float(donation.neededAmount)
     }
 }
