@@ -6,16 +6,18 @@
 //  Copyright © 2020 Tech Birds. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Donation {
     let name: String
     let type: Type
-    let amount: Double
+    let currentAmount: Double
+    let neededAmount: Double
     let target: String
     let description: String
     let account: Account
     let author: Author
+    let photo: UIImage
 }
 
 extension Donation {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A51B4BE2250C05C1003FE2AB /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B4BE1250C05C1003FE2AB /* UIColor+Utils.swift */; };
+		A51B4BE4250C09B6003FE2AB /* AmazingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B4BE3250C09B6003FE2AB /* AmazingProgressView.swift */; };
 		A52397C5250BAD5C00E81FAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52397C4250BAD5C00E81FAE /* AppDelegate.swift */; };
 		A52397C7250BAD5C00E81FAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52397C6250BAD5C00E81FAE /* SceneDelegate.swift */; };
 		A52397C9250BAD5C00E81FAE /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52397C8250BAD5C00E81FAE /* FeedViewController.swift */; };
@@ -25,6 +27,8 @@
 		A52397F0250BC09000E81FAE /* FeedPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52397EF250BC09000E81FAE /* FeedPostCell.swift */; };
 		A52397F2250BC19500E81FAE /* UIImageView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52397F1250BC19500E81FAE /* UIImageView+Utils.swift */; };
 		A5505D31250BEDE700233104 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5505D30250BEDE700233104 /* UIView+Utils.swift */; };
+		A5505D34250BFBCB00233104 /* DonationSnippetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5505D33250BFBCB00233104 /* DonationSnippetView.swift */; };
+		A5505D36250BFBFC00233104 /* DonationSnippetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5505D35250BFBFC00233104 /* DonationSnippetView.xib */; };
 		A56E92E8250BC5660086ACE1 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56E92E7250BC5660086ACE1 /* Date+Utils.swift */; };
 		A56E92EA250BC6EE0086ACE1 /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56E92E9250BC6EE0086ACE1 /* MetricsView.swift */; };
 		A56E92ED250BC7310086ACE1 /* MetricsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A56E92EC250BC7310086ACE1 /* MetricsView.xib */; };
@@ -32,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A51B4BE1250C05C1003FE2AB /* UIColor+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		A51B4BE3250C09B6003FE2AB /* AmazingProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazingProgressView.swift; sourceTree = "<group>"; };
 		A52397C1250BAD5C00E81FAE /* VKHackathonDonations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKHackathonDonations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52397C4250BAD5C00E81FAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A52397C6250BAD5C00E81FAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +58,8 @@
 		A52397EF250BC09000E81FAE /* FeedPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostCell.swift; sourceTree = "<group>"; };
 		A52397F1250BC19500E81FAE /* UIImageView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Utils.swift"; sourceTree = "<group>"; };
 		A5505D30250BEDE700233104 /* UIView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
+		A5505D33250BFBCB00233104 /* DonationSnippetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationSnippetView.swift; sourceTree = "<group>"; };
+		A5505D35250BFBFC00233104 /* DonationSnippetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonationSnippetView.xib; sourceTree = "<group>"; };
 		A56E92E7250BC5660086ACE1 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
 		A56E92E9250BC6EE0086ACE1 /* MetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
 		A56E92EC250BC7310086ACE1 /* MetricsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MetricsView.xib; sourceTree = "<group>"; };
@@ -158,15 +166,35 @@
 				A52397F1250BC19500E81FAE /* UIImageView+Utils.swift */,
 				A56E92E7250BC5660086ACE1 /* Date+Utils.swift */,
 				A5505D30250BEDE700233104 /* UIView+Utils.swift */,
+				A51B4BE1250C05C1003FE2AB /* UIColor+Utils.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5505D32250BFBA400233104 /* MetricsView */ = {
+			isa = PBXGroup;
+			children = (
+				A56E92E9250BC6EE0086ACE1 /* MetricsView.swift */,
+				A56E92EC250BC7310086ACE1 /* MetricsView.xib */,
+			);
+			path = MetricsView;
+			sourceTree = "<group>";
+		};
+		A5505D37250BFC0200233104 /* DonationSnippetView */ = {
+			isa = PBXGroup;
+			children = (
+				A5505D33250BFBCB00233104 /* DonationSnippetView.swift */,
+				A5505D35250BFBFC00233104 /* DonationSnippetView.xib */,
+			);
+			path = DonationSnippetView;
 			sourceTree = "<group>";
 		};
 		A56E92EB250BC6F70086ACE1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A56E92E9250BC6EE0086ACE1 /* MetricsView.swift */,
-				A56E92EC250BC7310086ACE1 /* MetricsView.xib */,
+				A51B4BE3250C09B6003FE2AB /* AmazingProgressView.swift */,
+				A5505D32250BFBA400233104 /* MetricsView */,
+				A5505D37250BFC0200233104 /* DonationSnippetView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +259,7 @@
 			files = (
 				A52397D3250BAD5D00E81FAE /* LaunchScreen.storyboard in Resources */,
 				A52397D0250BAD5D00E81FAE /* Assets.xcassets in Resources */,
+				A5505D36250BFBFC00233104 /* DonationSnippetView.xib in Resources */,
 				A56E92ED250BC7310086ACE1 /* MetricsView.xib in Resources */,
 				A52397DB250BAF8F00E81FAE /* Feed.storyboard in Resources */,
 				A52397CE250BAD5C00E81FAE /* Main.storyboard in Resources */,
@@ -245,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5505D34250BFBCB00233104 /* DonationSnippetView.swift in Sources */,
 				A52397CB250BAD5C00E81FAE /* ServicesViewController.swift in Sources */,
 				A52397F0250BC09000E81FAE /* FeedPostCell.swift in Sources */,
 				A5505D31250BEDE700233104 /* UIView+Utils.swift in Sources */,
@@ -253,12 +283,14 @@
 				A52397E2250BB90D00E81FAE /* Donation.swift in Sources */,
 				A52397C7250BAD5C00E81FAE /* SceneDelegate.swift in Sources */,
 				A56E92E8250BC5660086ACE1 /* Date+Utils.swift in Sources */,
+				A51B4BE2250C05C1003FE2AB /* UIColor+Utils.swift in Sources */,
 				A56E92EF250BC78B0086ACE1 /* Metrics.swift in Sources */,
 				A52397E9250BBBAE00E81FAE /* App.swift in Sources */,
 				A56E92EA250BC6EE0086ACE1 /* MetricsView.swift in Sources */,
 				A52397E7250BBA3A00E81FAE /* Author.swift in Sources */,
 				A52397E4250BB9D000E81FAE /* Account.swift in Sources */,
 				A52397EB250BBBC500E81FAE /* FeedService.swift in Sources */,
+				A51B4BE4250C09B6003FE2AB /* AmazingProgressView.swift in Sources */,
 				A52397F2250BC19500E81FAE /* UIImageView+Utils.swift in Sources */,
 				A52397EE250BBC3400E81FAE /* Post.swift in Sources */,
 			);
