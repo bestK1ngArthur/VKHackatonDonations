@@ -11,4 +11,9 @@ import Foundation
 struct Author {
     let firstName: String
     let lastName: String
+    let photoURL: URL
+    
+    var fullName: String {
+        "\(firstName) \(lastName)"
+    }
 }
