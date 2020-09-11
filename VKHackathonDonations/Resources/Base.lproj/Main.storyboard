@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="pBr-wR-zhg" kind="relationship" relationship="viewControllers" id="m0m-us-3kI"/>
+                        <segue destination="66o-Uw-4HG" kind="relationship" relationship="viewControllers" id="DrG-Dr-S88"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="21d-7y-esY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Feed" id="pBr-wR-zhg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Новости" image="Feed" id="WzQ-wU-jZE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pLd-29-v2j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="425"/>
+        </scene>
+        <!--Services-->
+        <scene sceneID="oVz-kw-gwS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Services" id="66o-Uw-4HG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Сервисы" image="Services" id="NgF-4w-CO1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3C-M4-l7P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="208" y="425"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Feed" width="22" height="22"/>
+        <image name="Services" width="23" height="23"/>
+    </resources>
+</document>

@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  FeedViewController.swift
 //  VKHackathonDonations
 //
 //  Created by Artem Belkov on 11.09.2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FeedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

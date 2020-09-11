@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6jA-h5-109">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Сервисы-->
+        <scene sceneID="dLu-4B-f0i">
+            <objects>
+                <viewController id="fYq-Ph-0jL" customClass="ServicesViewController" customModule="VKHackathonDonations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nm5-TE-Cne">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="u9i-1K-Mxz">
+                                <rect key="frame" x="106" y="426.5" width="202" height="43"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8A-9G-KPn">
+                                <rect key="frame" x="99.5" y="477.5" width="215" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="u9i-1K-Mxz" secondAttribute="centerX" id="2rg-F9-bke"/>
+                            <constraint firstItem="v8A-9G-KPn" firstAttribute="centerX" secondItem="u9i-1K-Mxz" secondAttribute="centerX" id="9NI-Ea-4Sg"/>
+                            <constraint firstAttribute="centerY" secondItem="u9i-1K-Mxz" secondAttribute="centerY" id="HUZ-KG-sT1"/>
+                            <constraint firstItem="v8A-9G-KPn" firstAttribute="top" secondItem="u9i-1K-Mxz" secondAttribute="bottom" constant="8" symbolic="YES" id="Hh1-pw-s0n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jh9-8L-iW8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Сервисы" id="b5L-ec-MJY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2DK-kF-XYw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659.4202898550725" y="359.59821428571428"/>
+        </scene>
+        <!--Сервисы-->
+        <scene sceneID="qSD-ML-dOx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6jA-h5-109" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Сервисы" image="Services" id="Fhy-s3-Rwd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="euT-fg-0aL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fYq-Ph-0jL" kind="relationship" relationship="rootViewController" id="JxC-pt-Qrw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RL7-bM-IPB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.27536231884062" y="359.59821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Services" width="23" height="23"/>
+    </resources>
+</document>

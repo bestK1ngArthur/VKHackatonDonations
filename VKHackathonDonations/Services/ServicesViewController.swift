@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  ServicesViewController.swift
 //  VKHackathonDonations
 //
 //  Created by Artem Belkov on 11.09.2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ServicesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

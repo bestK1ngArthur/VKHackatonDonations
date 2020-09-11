@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		A52397C5250BAD5C00E81FAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52397C4250BAD5C00E81FAE /* AppDelegate.swift */; };
 		A52397C7250BAD5C00E81FAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52397C6250BAD5C00E81FAE /* SceneDelegate.swift */; };
-		A52397C9250BAD5C00E81FAE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52397C8250BAD5C00E81FAE /* FirstViewController.swift */; };
-		A52397CB250BAD5C00E81FAE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52397CA250BAD5C00E81FAE /* SecondViewController.swift */; };
+		A52397C9250BAD5C00E81FAE /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52397C8250BAD5C00E81FAE /* FeedViewController.swift */; };
+		A52397CB250BAD5C00E81FAE /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52397CA250BAD5C00E81FAE /* ServicesViewController.swift */; };
 		A52397CE250BAD5C00E81FAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52397CC250BAD5C00E81FAE /* Main.storyboard */; };
 		A52397D0250BAD5D00E81FAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52397CF250BAD5D00E81FAE /* Assets.xcassets */; };
 		A52397D3250BAD5D00E81FAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52397D1250BAD5D00E81FAE /* LaunchScreen.storyboard */; };
+		A52397DB250BAF8F00E81FAE /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52397DA250BAF8F00E81FAE /* Feed.storyboard */; };
+		A52397DD250BAFB400E81FAE /* Services.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52397DC250BAFB400E81FAE /* Services.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A52397C1250BAD5C00E81FAE /* VKHackathonDonations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKHackathonDonations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52397C4250BAD5C00E81FAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A52397C6250BAD5C00E81FAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A52397C8250BAD5C00E81FAE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A52397CA250BAD5C00E81FAE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A52397C8250BAD5C00E81FAE /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A52397CA250BAD5C00E81FAE /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		A52397CD250BAD5C00E81FAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A52397CF250BAD5D00E81FAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A52397D2250BAD5D00E81FAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A52397D4250BAD5D00E81FAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A52397DA250BAF8F00E81FAE /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		A52397DC250BAFB400E81FAE /* Services.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Services.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +64,40 @@
 			children = (
 				A52397C4250BAD5C00E81FAE /* AppDelegate.swift */,
 				A52397C6250BAD5C00E81FAE /* SceneDelegate.swift */,
-				A52397C8250BAD5C00E81FAE /* FirstViewController.swift */,
-				A52397CA250BAD5C00E81FAE /* SecondViewController.swift */,
-				A52397CC250BAD5C00E81FAE /* Main.storyboard */,
-				A52397CF250BAD5D00E81FAE /* Assets.xcassets */,
-				A52397D1250BAD5D00E81FAE /* LaunchScreen.storyboard */,
-				A52397D4250BAD5D00E81FAE /* Info.plist */,
+				A52397DE250BB7AB00E81FAE /* Feed */,
+				A52397DF250BB7B200E81FAE /* Services */,
+				A52397E0250BB86000E81FAE /* Resources */,
 			);
 			path = VKHackathonDonations;
+			sourceTree = "<group>";
+		};
+		A52397DE250BB7AB00E81FAE /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				A52397C8250BAD5C00E81FAE /* FeedViewController.swift */,
+				A52397DA250BAF8F00E81FAE /* Feed.storyboard */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		A52397DF250BB7B200E81FAE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A52397CA250BAD5C00E81FAE /* ServicesViewController.swift */,
+				A52397DC250BAFB400E81FAE /* Services.storyboard */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A52397E0250BB86000E81FAE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A52397CC250BAD5C00E81FAE /* Main.storyboard */,
+				A52397D1250BAD5D00E81FAE /* LaunchScreen.storyboard */,
+				A52397CF250BAD5D00E81FAE /* Assets.xcassets */,
+				A52397D4250BAD5D00E81FAE /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +160,9 @@
 			files = (
 				A52397D3250BAD5D00E81FAE /* LaunchScreen.storyboard in Resources */,
 				A52397D0250BAD5D00E81FAE /* Assets.xcassets in Resources */,
+				A52397DB250BAF8F00E81FAE /* Feed.storyboard in Resources */,
 				A52397CE250BAD5C00E81FAE /* Main.storyboard in Resources */,
+				A52397DD250BAFB400E81FAE /* Services.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A52397CB250BAD5C00E81FAE /* SecondViewController.swift in Sources */,
-				A52397C9250BAD5C00E81FAE /* FirstViewController.swift in Sources */,
+				A52397CB250BAD5C00E81FAE /* ServicesViewController.swift in Sources */,
+				A52397C9250BAD5C00E81FAE /* FeedViewController.swift in Sources */,
 				A52397C5250BAD5C00E81FAE /* AppDelegate.swift in Sources */,
 				A52397C7250BAD5C00E81FAE /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = VKHackathonDonations/Info.plist;
+				INFOPLIST_FILE = VKHackathonDonations/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = VKHackathonDonations/Info.plist;
+				INFOPLIST_FILE = VKHackathonDonations/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
