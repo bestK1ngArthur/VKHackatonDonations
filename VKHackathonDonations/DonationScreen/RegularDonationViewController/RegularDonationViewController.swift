@@ -49,11 +49,11 @@ class RegularDonationViewController: UIViewController {
 
 extension RegularDonationViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 8
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "buttonCell"), indexPath.row == 6 {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "buttonCell"), indexPath.row == 7 {
             return cell
         }
         if let cell = tableView.dequeueReusableCell(withIdentifier: "addPhoto") as? AddPhotoTableViewCell, indexPath.row == 0 {
@@ -78,11 +78,13 @@ extension RegularDonationViewController: UITableViewDataSource {
                     cell.textView.text = "Счет VK Pay"
                     cell.textView.textColor = .black
                     cell.arrowImage.isHidden = false
+                    cell.isUserInteractionEnabled = false
                 case 6:
                     cell.titleLabel.text = "Автор"
                     cell.textView.text = "Матвой Правосудов"
                     cell.textView.textColor = .black
                     cell.arrowImage.isHidden = false
+                    cell.isUserInteractionEnabled = false
                 default: break
                 }
                 

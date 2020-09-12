@@ -77,6 +77,7 @@ class TargetDonationViewController: UIViewController {
                         cell.textView.text = "Счет VK Pay"
                         cell.textView.textColor = .black
                         cell.arrowImage.isHidden = false
+                        cell.isUserInteractionEnabled = false
                     default: break
                     }
                     
