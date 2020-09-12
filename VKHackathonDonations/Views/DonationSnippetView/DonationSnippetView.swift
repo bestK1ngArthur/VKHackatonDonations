@@ -17,16 +17,7 @@ class DonationSnippetView: UIView {
     @IBOutlet weak var helpButton: UIButton!
     @IBOutlet weak var footerView: UIView!
     
-    private let priceFormatter: NumberFormatter = {
-        let formatter = NumberFormatter()
-        
-        formatter.maximumFractionDigits = 0
-        formatter.numberStyle = .currency
-        formatter.currencySymbol = ""
-        formatter.currencyGroupingSeparator = " "
-        
-        return formatter
-    }()
+    var didTap: (() -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -50,32 +41,47 @@ class DonationSnippetView: UIView {
         helpButton.layer.cornerRadius = 10
         helpButton.layer.borderColor = UIColor("3F8AE0").cgColor
         helpButton.layer.borderWidth = 1
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        addGestureRecognizer(tap)
     }
     
     func configure(_ donation: Donation) {
         photoView.image = donation.photo
         titleLabel.text = donation.name
-        
-        var dateText: String {
-            switch donation.type {
-            case .oneTime(let date):
-                return "Закончится через n дней"
-            case .regular:
-                return "Помощь нужна каждый месяц"
-            }
-        }
-        subtitleLabel.text = "\(donation.author.fullName) · \(dateText)"
-        
-        var infoText: String {
-            switch donation.type {
-            case .oneTime:
-                return "Собрано \(priceFormatter.string(from: NSNumber(value: donation.currentAmount))!) ₽ из \(priceFormatter.string(from: NSNumber(value: donation.neededAmount))!) ₽"
-            case .regular:
-                return "Собрано в month \(priceFormatter.string(from: NSNumber(value: donation.currentAmount))!) ₽"
-            }
-        }
-        
-        infoLabel.text = infoText
+        subtitleLabel.text = "\(donation.author.fullName) · \(donation.dateText)"
+        infoLabel.text = donation.infoText
         progressView.progress = Float(donation.currentAmount) / Float(donation.neededAmount)
+    }
+    
+    @objc private func handleTap() {
+        didTap?()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        fadeIn()
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        fadeOut()
+    }
+
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesCancelled(touches, with: event)
+        fadeOut()
+    }
+    
+    private func fadeIn() {
+        UIView.animate(withDuration: 0.1) { [unowned self] in
+            self.alpha = 0.7
+        }
+    }
+    
+    private func fadeOut() {
+        UIView.animate(withDuration: 0.1) { [unowned self] in
+            self.alpha = 1
+        }
     }
 }

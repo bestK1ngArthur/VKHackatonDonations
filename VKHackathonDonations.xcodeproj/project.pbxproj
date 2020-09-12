@@ -16,6 +16,12 @@
 		846606F2250C095D00151C30 /* RegularDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846606F1250C095D00151C30 /* RegularDonationViewController.swift */; };
 		846606F4250C096D00151C30 /* TargetDonationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846606F3250C096D00151C30 /* TargetDonationViewController.storyboard */; };
 		846606F7250C099100151C30 /* RegularDonationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846606F6250C099100151C30 /* RegularDonationViewController.storyboard */; };
+<<<<<<< Updated upstream
+=======
+		A51B4BE2250C05C1003FE2AB /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B4BE1250C05C1003FE2AB /* UIColor+Utils.swift */; };
+		A51B4BE4250C09B6003FE2AB /* AmazingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B4BE3250C09B6003FE2AB /* AmazingProgressView.swift */; };
+		A51B4BE6250C9349003FE2AB /* DonationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B4BE5250C9349003FE2AB /* DonationInfoViewController.swift */; };
+>>>>>>> Stashed changes
 		A52397C5250BAD5C00E81FAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52397C4250BAD5C00E81FAE /* AppDelegate.swift */; };
 		A52397C7250BAD5C00E81FAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52397C6250BAD5C00E81FAE /* SceneDelegate.swift */; };
 		A52397C9250BAD5C00E81FAE /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52397C8250BAD5C00E81FAE /* FeedViewController.swift */; };
@@ -52,6 +58,12 @@
 		846606F1250C095D00151C30 /* RegularDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularDonationViewController.swift; sourceTree = "<group>"; };
 		846606F3250C096D00151C30 /* TargetDonationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TargetDonationViewController.storyboard; sourceTree = "<group>"; };
 		846606F6250C099100151C30 /* RegularDonationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegularDonationViewController.storyboard; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+=======
+		A51B4BE1250C05C1003FE2AB /* UIColor+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		A51B4BE3250C09B6003FE2AB /* AmazingProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazingProgressView.swift; sourceTree = "<group>"; };
+		A51B4BE5250C9349003FE2AB /* DonationInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationInfoViewController.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		A52397C1250BAD5C00E81FAE /* VKHackathonDonations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKHackathonDonations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52397C4250BAD5C00E81FAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A52397C6250BAD5C00E81FAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +171,7 @@
 			children = (
 				A52397EF250BC09000E81FAE /* FeedPostCell.swift */,
 				A52397C8250BAD5C00E81FAE /* FeedViewController.swift */,
+				A51B4BE5250C9349003FE2AB /* DonationInfoViewController.swift */,
 				A52397DA250BAF8F00E81FAE /* Feed.storyboard */,
 			);
 			path = Feed;
@@ -325,6 +338,12 @@
 				A5505D34250BFBCB00233104 /* DonationSnippetView.swift in Sources */,
 				A52397CB250BAD5C00E81FAE /* ServicesViewController.swift in Sources */,
 				A52397F0250BC09000E81FAE /* FeedPostCell.swift in Sources */,
+<<<<<<< Updated upstream
+=======
+				A51B4BE6250C9349003FE2AB /* DonationInfoViewController.swift in Sources */,
+				73F03619250C309300494742 /* FeedV2.swift in Sources */,
+				73F03621250C3B5C00494742 /* PostHeader.swift in Sources */,
+>>>>>>> Stashed changes
 				A5505D31250BEDE700233104 /* UIView+Utils.swift in Sources */,
 				846606E9250BF91500151C30 /* DonationViewController.swift in Sources */,
 				A52397C9250BAD5C00E81FAE /* FeedViewController.swift in Sources */,
