@@ -34,7 +34,7 @@
                                             <constraint firstAttribute="width" constant="133" id="Al6-JI-rCH"/>
                                             <constraint firstAttribute="height" constant="36" id="e5i-Vy-fu1"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Создать сбор">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -209,7 +209,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="66C-sp-hyE"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Тип сбора" largeTitleDisplayMode="never" id="p3E-Ih-fw6"/>
+                    <navigationItem key="navigationItem" title="Тип сбора" largeTitleDisplayMode="never" id="p3E-Ih-fw6">
+                        <barButtonItem key="backBarButtonItem" title=" " id="s8v-Yh-6om"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="od1-Ra-5vn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

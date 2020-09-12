@@ -15,17 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="u9i-1K-Mxz">
-                                <rect key="frame" x="106" y="426.5" width="202" height="43"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8A-9G-KPn">
-                                <rect key="frame" x="99.5" y="477.5" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlV-To-BVd">
                                 <rect key="frame" x="63.5" y="445" width="287" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -37,10 +26,6 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="u9i-1K-Mxz" secondAttribute="centerX" id="2rg-F9-bke"/>
-                            <constraint firstItem="v8A-9G-KPn" firstAttribute="centerX" secondItem="u9i-1K-Mxz" secondAttribute="centerX" id="9NI-Ea-4Sg"/>
-                            <constraint firstAttribute="centerY" secondItem="u9i-1K-Mxz" secondAttribute="centerY" id="HUZ-KG-sT1"/>
-                            <constraint firstItem="v8A-9G-KPn" firstAttribute="top" secondItem="u9i-1K-Mxz" secondAttribute="bottom" constant="8" symbolic="YES" id="Hh1-pw-s0n"/>
                             <constraint firstItem="BlV-To-BVd" firstAttribute="centerY" secondItem="jh9-8L-iW8" secondAttribute="centerY" id="dW6-gF-VmM"/>
                             <constraint firstItem="BlV-To-BVd" firstAttribute="centerX" secondItem="jh9-8L-iW8" secondAttribute="centerX" id="rtc-G6-Fce"/>
                         </constraints>
