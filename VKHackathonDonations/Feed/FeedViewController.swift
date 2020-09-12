@@ -17,7 +17,7 @@ class FeedViewController: UITableViewController {
 
         tableView.tableFooterView = .init()
     }
-
+        
     override func numberOfSections(in tableView: UITableView) -> Int { 1 }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,9 +29,21 @@ class FeedViewController: UITableViewController {
             fatalError()
         }
 
-        cell.configure(posts[indexPath.row])
-
+        let post = posts[indexPath.row]
+        
+        cell.configure(post)
+        cell.donationSnippetView.didTap = { [unowned self] in
+            guard let donation = post.donation else { return }
+            self.showDonationInfo(with: donation)
+        }
+        
         return cell
+    }
+    
+    private func showDonationInfo(with donation: Donation) {
+        let donationInfoViewController = storyboard!.instantiateViewController(identifier: String(describing: DonationInfoViewController.self)) as! DonationInfoViewController
+        donationInfoViewController.donation = donation
+        navigationController?.pushViewController(donationInfoViewController, animated: true)
     }
 }
 

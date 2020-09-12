@@ -41,7 +41,7 @@ struct ProgressBar: View {
                     .opacity(0.3)
                 
                 Capsule()
-                    .frame(width: geometry.size.width * currentValue / maxValue, height: 4)
+                    .frame(width: geometry.size.width * self.currentValue / self.maxValue, height: 4)
                     .foregroundColor(Color(UIColor("#3F8AE0")))
                 
             }

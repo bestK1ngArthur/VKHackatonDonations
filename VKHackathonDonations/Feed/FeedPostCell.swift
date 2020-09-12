@@ -13,11 +13,11 @@ class FeedPostCell: UITableViewCell {
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
-    private var donationSnippetView: DonationSnippetView!
-    private var metricsView: MetricsView!
-    
     @IBOutlet weak var stackView: UIStackView!
 
+    var donationSnippetView: DonationSnippetView!
+    var metricsView: MetricsView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
