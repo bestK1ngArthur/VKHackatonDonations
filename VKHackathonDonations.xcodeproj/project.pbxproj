@@ -15,6 +15,8 @@
 		73F03627250C419400494742 /* YXHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F03626250C419400494742 /* YXHeader.swift */; };
 		73F03629250C424200494742 /* YXProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F03628250C424200494742 /* YXProgressBar.swift */; };
 		73F0362B250C48BF00494742 /* YXOutlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F0362A250C48BF00494742 /* YXOutlineButton.swift */; };
+		845C6988250CAFB8005D33BA /* AddPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C6987250CAFB8005D33BA /* AddPhotoTableViewCell.swift */; };
+		845C698A250CB715005D33BA /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845C6989250CB715005D33BA /* TextFieldTableViewCell.swift */; };
 		846606E9250BF91500151C30 /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846606E8250BF91500151C30 /* DonationViewController.swift */; };
 		846606EB250BF96700151C30 /* DonationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846606EA250BF96700151C30 /* DonationViewController.storyboard */; };
 		846606ED250BFEE100151C30 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846606EC250BFEE100151C30 /* Extensions.swift */; };
@@ -61,6 +63,8 @@
 		73F03626250C419400494742 /* YXHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXHeader.swift; sourceTree = "<group>"; };
 		73F03628250C424200494742 /* YXProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXProgressBar.swift; sourceTree = "<group>"; };
 		73F0362A250C48BF00494742 /* YXOutlineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXOutlineButton.swift; sourceTree = "<group>"; };
+		845C6987250CAFB8005D33BA /* AddPhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoTableViewCell.swift; sourceTree = "<group>"; };
+		845C6989250CB715005D33BA /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		846606E8250BF91500151C30 /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
 		846606EA250BF96700151C30 /* DonationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DonationViewController.storyboard; sourceTree = "<group>"; };
 		846606EC250BFEE100151C30 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 			children = (
 				846606F1250C095D00151C30 /* RegularDonationViewController.swift */,
 				846606F6250C099100151C30 /* RegularDonationViewController.storyboard */,
+				845C6989250CB715005D33BA /* TextFieldTableViewCell.swift */,
+				845C6987250CAFB8005D33BA /* AddPhotoTableViewCell.swift */,
 			);
 			path = RegularDonationViewController;
 			sourceTree = "<group>";
@@ -387,6 +393,7 @@
 				A52397C5250BAD5C00E81FAE /* AppDelegate.swift in Sources */,
 				A52397E2250BB90D00E81FAE /* Donation.swift in Sources */,
 				A52397C7250BAD5C00E81FAE /* SceneDelegate.swift in Sources */,
+				845C6988250CAFB8005D33BA /* AddPhotoTableViewCell.swift in Sources */,
 				A56E92E8250BC5660086ACE1 /* Date+Utils.swift in Sources */,
 				73F0361F250C31CA00494742 /* PostCounter.swift in Sources */,
 				A51B4BE2250C05C1003FE2AB /* UIColor+Utils.swift in Sources */,
@@ -401,6 +408,7 @@
 				73F0362B250C48BF00494742 /* YXOutlineButton.swift in Sources */,
 				846606F0250C094A00151C30 /* TargetDonationViewController.swift in Sources */,
 				A52397EB250BBBC500E81FAE /* FeedService.swift in Sources */,
+				845C698A250CB715005D33BA /* TextFieldTableViewCell.swift in Sources */,
 				A51B4BE4250C09B6003FE2AB /* AmazingProgressView.swift in Sources */,
 				846606ED250BFEE100151C30 /* Extensions.swift in Sources */,
 				A52397F2250BC19500E81FAE /* UIImageView+Utils.swift in Sources */,
